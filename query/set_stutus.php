@@ -23,7 +23,7 @@ if ($user_id == $is_form_id or $_SESSION['user_role'] == 'admin'){
   add_user_info_status($status_new, $is_form_id);
   set_flash_message($msg_success);
   set_flash_message_status(true);
-  header('Location:http://localhost:8888/dz-php/dz1/users.php');
+  header('Location:../users.php');
 }
 else {
   set_flash_message($msg_danger);

@@ -59,14 +59,14 @@ function add_user($login, $psw){
 #проверка на автоизацию
 function login_or_not($login){
   if (empty($login)){
-    header('Location:http://localhost:8888/dz-php/dz1/page_login.php');
+    header('Location:../page_login.php');
 }
 }
 
 #проверка на админа
 function admin_or_not($user){
   if($user != 'admin'){
-    header('Location:http://localhost:8888/dz-php/dz1/users.php');
+    header('Location:../users.php');
   };
 }
 

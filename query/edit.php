@@ -28,7 +28,7 @@ if ($user_id == $update_user['id'] or admin_or_not($_SESSION['user_role'])){
   add_user_info_main($update_user['name'], $update_user['job'], $update_user['phone'], $update_user['geo'], $update_user['id']);
   set_flash_message($msg_success);
   set_flash_message_status(true);
-  header('Location:http://localhost:8888/dz-php/dz1/users.php');
+  header('Location:../users.php');
 }
 else {
   set_flash_message($msg_danger);

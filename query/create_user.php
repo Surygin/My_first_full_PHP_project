@@ -47,7 +47,7 @@ if(!empty($new_user['email'] and !empty($new_user['psw']))){
     move_uploaded_file($img_path, '../' . $new_user['avatar']);
     set_flash_message($msg_success);
     set_flash_message_status(true);
-    header('Location:http://localhost:8888/dz-php/dz1/users.php');
+    header('Location:../users.php');
   };
 };
 

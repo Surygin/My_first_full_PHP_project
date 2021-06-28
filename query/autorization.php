@@ -17,7 +17,7 @@ set_id_user($user_id);
 if ($user_id){
     $_SESSION['msg'] = $msg_success;
     set_flash_message_status(true);
-    header('Location:http://localhost:8888/dz-php/dz1/users.php');
+    header('Location:http:../users.php');
     exit;
 }
 else {
