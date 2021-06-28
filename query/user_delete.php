@@ -17,9 +17,6 @@ $user_avatar = '../' . $user[0]['img'];
 #var_dump($profile_user_id); echo '<br>';
 #var_dump($user_avatar);
 
-delete_avatar_file($user_avatar);
-user_delete($profile_user_id);
-
 if ($user_id == $profile_id or $_SESSION['user_role'] == 'admin'){
   delete_avatar_file($user_avatar);
   user_delete($profile_user_id);
